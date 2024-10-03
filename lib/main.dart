@@ -42,6 +42,40 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+        body: Column(
+          children: [
+            Text(
+              "In publishing and graphic design, Lorem ipsum is a placeholder text commonly",
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Text(
+              "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is avail",
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.thumb_up),
+                Column(children: [
+                  Icon(Icons.comment),
+                  Row(children: [
+                    Icon(Icons.comment),
+                    Icon(Icons.comment),
+                  ],),
+                  Icon(Icons.comment),
+                ],),
+                Icon(Icons.comment),
+                Icon(Icons.share),
+              ],
+            )
+          ],
+        ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.yellow,
           onPressed: () {},
