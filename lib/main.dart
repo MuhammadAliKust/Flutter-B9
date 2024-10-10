@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b9/asset_image.dart';
+import 'package:flutter_b9/list_view_demo.dart';
 import 'package:flutter_b9/login.dart';
 
 import 'network_image.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginView(),
+      home: ListViewDemo(),
     );
   }
 }
