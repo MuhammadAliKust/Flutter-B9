@@ -4,6 +4,7 @@ import 'package:flutter_b9/dynamic_list_view.dart';
 import 'package:flutter_b9/list_view_demo.dart';
 import 'package:flutter_b9/login.dart';
 import 'package:flutter_b9/multiple_selection_demo.dart';
+import 'package:flutter_b9/onboarding_view.dart';
 import 'package:flutter_b9/single_selection_demo.dart';
 
 import 'network_image.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DynamicListView(),
+      home: OnboardingView(),
     );
   }
 }
