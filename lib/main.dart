@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b9/asset_image.dart';
+import 'package:flutter_b9/dynamic_list_view.dart';
 import 'package:flutter_b9/list_view_demo.dart';
 import 'package:flutter_b9/login.dart';
 import 'package:flutter_b9/multiple_selection_demo.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MultipleSelectionDemo(),
+      home: DynamicListView(),
     );
   }
 }
