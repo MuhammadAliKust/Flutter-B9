@@ -8,14 +8,19 @@ import 'package:flutter_b9/list_view_demo.dart';
 import 'package:flutter_b9/login.dart';
 import 'package:flutter_b9/multiple_selection_demo.dart';
 import 'package:flutter_b9/onboarding_view.dart';
+import 'package:flutter_b9/providers/user_provider.dart';
+import 'package:flutter_b9/screen_a.dart';
 import 'package:flutter_b9/single_selection_demo.dart';
 import 'package:flutter_b9/tabbar_view.dart';
+import 'package:provider/provider.dart';
 
 import 'bottom_bar.dart';
 import 'network_image.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomSheetDemo(),
+      home: ScreenAView(),
     );
   }
 }
