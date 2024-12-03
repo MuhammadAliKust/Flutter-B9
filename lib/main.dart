@@ -3,6 +3,7 @@ import 'package:flutter_b9/asset_image.dart';
 import 'package:flutter_b9/bottom_sheet.dart';
 import 'package:flutter_b9/dialog_box_demo.dart';
 import 'package:flutter_b9/dynamic_list_view.dart';
+import 'package:flutter_b9/google_map_view.dart';
 import 'package:flutter_b9/grid_view_demo.dart';
 import 'package:flutter_b9/list_view_demo.dart';
 import 'package:flutter_b9/login.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ScreenAView(),
+      home: GoogleMapView(),
     );
   }
 }
