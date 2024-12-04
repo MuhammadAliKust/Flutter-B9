@@ -38,6 +38,7 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   provider: ^6.1.2
   google_maps_flutter: ^2.10.0
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
